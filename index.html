@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eddy bio app</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <div class="avt"></div>
+            <h1>Eddy So Sweet</h1>
+        </header>
+        <ul>
+            <li>Official Website</li>
+            <li>YouTube</li>
+            <li>Twitter</li>
+            <li>GitHub</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+        </ul>
+        <div id="vanta"></div>
+    </div>
+    <script>
+        const main = document.querySelector('.main');
+        setTimeout(() => {
+            main.style.opacity = "1";
+            main.style.filter = "none";
+
+        }, 2000);
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            VANTA.BIRDS({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color1: 0xd23286,
+                color2: 0xc66c0,
+                colorMode: "lerp",
+                backgroundAlpha: 0.0,
+                birdSize: 1.20,
+                separation: 40.00,
+                alignment: 41.00
+            })
+        })
+    </script>
+</body>
+
+</html>

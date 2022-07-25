@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Unica+One&display=swap');
+
+body { 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background: gray url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    opacity: 0;
+    filter: blur(10px);
+    transition: all 2s ease-in-out;
+}
+
+header {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1 {
+    color: #ff5000;
+    display: inline-block;
+    font-size: 0.8em;
+    border-radius: 2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000a;
+    padding: 0.5em 0.8em;
+    border: 2px solid #fffa;
+}
+
+.avt {
+    width: 8em;
+    height: 8em;
+    background: url(./image.jpg) no-repeat;
+    background-size: cover;
+    background-position: -25px 8px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    box-shadow: rgba(28, 32, 93/ 24%) 0px 2px 8px 0px;
+}
+
+ul {
+    margin-top: 1em;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+ul>li {
+    z-index: 1;
+    min-width: 200px;
+    font-weight: 600;
+    background-color: #fffa;
+    backdrop-filter: blur(10px) saturate(160%) contrast(190%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(190%);
+    border-radius: 10em;
+    padding: 1em;
+    cursor: pointer;
+    margin-bottom: 1.5em;
+    box-shadow: rgb(28, 32, 93 / 24%) 0px 2px 8px 0px;
+    transition: all 0.2s ease-in-out;
+}
+
+ul>li:hover {
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.2);
+    min-width: 220px;
+    color: #ff5000;
+
+}
+
+#vanta {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
