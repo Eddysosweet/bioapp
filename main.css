@@ -15,7 +15,7 @@ body {
 .main {
     opacity: 0;
     filter: blur(10px);
-    transition: all 2s ease-in-out;
+    transition: all 2s ease-out;
 }
 
 header {
