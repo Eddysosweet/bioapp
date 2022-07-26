@@ -71,7 +71,10 @@ ul>li {
     margin-bottom: 1.5em;
     box-shadow: rgb(28, 32, 93 / 24%) 0px 2px 8px 0px;
     transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
 }
+
 
 ul>li:hover {
     z-index: 1;
@@ -79,6 +82,13 @@ ul>li:hover {
     min-width: 220px;
     color: #ff5000;
 
+}
+ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+ul > li > a > i{
+    margin-right: 10px ;
 }
 
 #vanta {
